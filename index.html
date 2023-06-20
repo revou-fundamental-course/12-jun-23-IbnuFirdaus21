@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature conversion</title>
+    <!-- font -->
+    <link rel="preconnect" link href="https://fonts.gstatic.com">
+    <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Roboto+Mono">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="judul">
+        <h1>Enter Temperature</h1>
+    </div>
+    <!-- box temperature conversion-->
+    <div class="Temperature">
+        <div class="container">
+            <label for="celcius">Celcius</label>
+            <input type="number" id="celcius"
+            oninput="celToFar()">
+        </div>
+        <div class="container">
+            <label for="fahrenheit">Fahrenheit</label>
+            <input type="number" id="fahrenheit"
+            oninput="farToCel()">
+        </div>
+        <script src="script.js"></script>
+    </div>
+    <!-- box penjelasan -->
+    <div class="Box">
+        <h2>Cara Konversi Celcius ke Fahrenheit</h2><br>
+        <div class="penjelasan">Suhu S dalam derajat Fahrenheit (&deg;F) sama 
+            dengan suhu S dalam derajat Celcius (&deg;C) 
+            kali 9/5 tambah 32.<br><br>
+            S(&deg;F)=(S(&deg;C)x9/5) + 32 <br> atau <br>
+            S(&deg;F)=(S(&deg;C)x1.8) + 32
+        </div>
+    </div>
+</body>
+</html>
